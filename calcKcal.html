@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calkcal.css">
+    <title>calKcal</title>
+</head>
+
+<body>
+    <div id="container">
+        <fieldset>
+            <legend><img src="calories.png" alt=""></legend>
+            <h2>Metabolismo basal</h2>
+            <form action="" id="form">
+                <div class="labelBox">
+                    <label for="sexo" class="labelText">Sexo</label>
+                    <select name="sexo" class="labelInput" id="sexo" value="sexo">
+                        <option value="mulher">Mulher</option>
+                        <option value="homem">Homem</option>
+                    </select>
+                </div>
+                <div class="labelBox">
+                    <label for="idade"  class="labelText">Idade</label>
+                    <input type="number" class="labelInput" id='idade' value='idade'>
+                </div>
+                <div class="labelBox">
+                    <label for="peso"  class="labelText">Peso</label>
+                    <input type="number" class="labelInput" id='peso' value='peso'>
+                </div>
+                <div class="labelBox">
+                    <label for="altura"  class="labelText">Altura (cm)</label>
+                    <input type="number" class="labelInput" id='altura' value='alutra'>
+                </div>
+                <div class="labelBox">
+                    <label for="atv"  class="labelText">Nível de atividade</label>
+                    <select name="atv" class="labelInput" id='nivel_trabalho'>
+                        <option  value="1.2">Sedentário</option>
+                        <option  value="1.375">Atividade ligeira</option>
+                        <option  value="1.55">Atividade moderada</option>
+                        <option  value="1.725">Atividade intensa</option>
+                        <option  value="1.9">Atividade muito intensa</option>
+                    </select>
+                </div>
+                <button type="submit" id="calc">Calcular</button>
+            </form>
+        </fieldset>
+        <script src="calckcal.js"></script>
+    </div>
+</body>
+
+</html>
